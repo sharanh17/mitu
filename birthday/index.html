@@ -2,7 +2,35 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Your Title Here</title>
     <link type="text/css" rel="stylesheet" href="./file/default.css">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img2.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif; /* Example font family */
+        }
+        
+        #main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ensure the main container covers the entire viewport height */
+        }
+        
+        #wrap {
+            text-align: center; /* Center content within #wrap */
+        }
+        
+        canvas {
+            max-width: 100%; /* Ensure the canvas does not exceed the viewport width */
+            height: auto; /* Maintain canvas aspect ratio */
+            display: block; /* Remove any default inline display */
+            margin: 0 auto; /* Center the canvas horizontally */
+        }
+    </style>
     <script type="text/javascript" src="./file/jquery.min.js"></script>
     <script type="text/javascript" src="./file/jscex.min.js"></script>
     <script type="text/javascript" src="./file/jscex-parser.js"></script>
@@ -23,7 +51,6 @@
             }
         }
     </script>
-    <style type="text/css"></style>
 </head>
 <body>
     <div id="main">
@@ -32,7 +59,7 @@
             <embed height="100" width="100" src="path/to/your-song.mp3" />
         </audio>
         <div id="wrap">
-            <canvas id="canvas" width="1100" height="680"></canvas>
+            <canvas id="canvas"></canvas>
         </div>
     </div>
 
