@@ -67,14 +67,14 @@
     }
     Heart.prototype = {
         get: function(i, scale) {
-            return this.points[i].mul(scale || 1);
+            return this.points[i].mul(scale ||1);
         }
     }
 
     Seed = function(tree, point, scale, color) {
         this.tree = tree;
 
-        var scale = scale || 1
+        var scale =  7
         var color = '#FFC0CB';
 
         this.heart = {
@@ -167,9 +167,9 @@
 
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("Click Me:) ", 30, -5);
-            ctx.fillText("Birthday Queen !", 28, 10);
+            ctx.font = "50px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
+            ctx.fillText("Click this:) ", 30, -5);
+            ctx.fillText("Mitaliiiii !", 28, 10);
             ctx.restore();
         },
         clear: function() {
